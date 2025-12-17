@@ -12,6 +12,7 @@
     --font-heading: "Playfair Display", serif;
     --font-body: "Inter", sans-serif;
     --font-nav: "Cinzel", sans-serif;
+    --font-subtitle: "Bebas Neue", sans-serif;
 }
 
 * {
@@ -54,12 +55,15 @@ img {
 }
 
 .navbar {
-    padding: 30px 0;
-    position:  absolute;
+    padding: 10px 0 0 0;
+    position:  fixed;
     width: 100%;
     top: 0;
     z-index: 100;
-    background: transparent;
+    background: var(--bg-secondary);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar .container {
@@ -117,7 +121,7 @@ img {
     display: flex;
     align-items: center;
     position: relative;
-    padding-top: 100px;
+    padding-top: 70px;
     overflow: hidden;
  }
 
@@ -149,12 +153,12 @@ img {
  }
 
  .hero-content .subtitle {
-    font-family: var(--font-body);
+    font-family: var(--font-subtitle);
     font-size: 18px;
-    text-decoration: uppercase;
+    text-transform: uppercase;
     letter-spacing: 3px;
     color: #888;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     display: block;
  }
 
@@ -177,6 +181,7 @@ img {
     letter-spacing: 2px;
     font-weight: 600;
     font-family: var(--font-body);
+    cursor: pointer;
  }
 
  .hero-image {
@@ -197,3 +202,114 @@ img {
  }
 
   /* ---  BIOGRAPHY SECTION --- */
+  #biography {
+    background: var(--vg-blue);
+    color: var(--white);
+    padding: 80px 0;
+  }
+
+ #biography .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+ }
+
+ .bio-image {
+    flex: 1;
+ }
+
+ .bio-image img {
+    width: 100%;
+    max-width: 440px;
+    padding: 10px;
+    border: 2px solid var(--white);
+    box-shadow: 20px 20px 0 rgba(0,0,0,0.2);
+ }
+
+ .bio-text {
+    flex: 1;
+ }
+
+.bio-text h4 {
+    font-family: var(--font-subtitle);
+    font-size: 20px;
+    color: var(--vg-yellow);
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.bio-text h2 {
+    font-family: var(--font-heading);
+    font-size: 56px;
+    margin-bottom: 25px;
+    line-height: 1.1;
+}
+
+.bio-text p {
+    font-size: 16px;
+    color: #e0e0e0;
+    text-align: justify;
+    font-weight: 300;
+}
+
+/* --- TIMELINE SECTION --- */
+
+#timeline {
+    padding: 80px 0;
+    background: var(--bg-secondary);
+}
+
+#timeline h2 {
+    text-align: center;
+    font-family: var(--font-heading);
+    font-size: 40px;
+    color: var(--text-accent);
+    margin-bottom: 80px;
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 100px;
+    align-items: center;
+    gap: 50px;
+}
+
+.timeline-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.timeline-image {
+    width: 45%;
+    position: relative;
+}
+
+.timeline-image img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    filter: sepia(15%) contrast(1.05);
+    box-shadow: 15px 15px 0px rgba(27, 38, 59, 0.1);
+}
+
+.timeline-image::before {
+    content: '';
+    position: absolute;
+    top: 20px; left: 20px;
+    width: 100%; height: 100%;
+    z-index: -1;
+}
+
+.timeline-content {
+    width: 55%;
+}
+
+.timeline-content h3 {
+    font-family: var(--font-heading);
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: var(--text-accent);
+    font-style: italic;
+}
+
+/* --- QUOTE SECTION --- */
