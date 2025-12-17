@@ -110,3 +110,90 @@ img {
 .nav-links li a:hover {
     color: var(--text-accent);
 }
+
+ /* ---  HERO SECTION --- */
+ #hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-top: 100px;
+    overflow: hidden;
+ }
+
+ #hero::before {
+    content: '';
+    position: absolute;
+    top: -10%; left: -10%;
+    width: 70%; height: 100%;
+ }
+
+ #hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ .hero-content {
+    width: 50%;
+    padding-right: 50px;
+ }
+
+ .hero-content h1 {
+    font-family: var(--font-heading);
+    font-size: 90px;
+    line-height: 1;
+    color: var(--text-accent);
+    margin-bottom: 25px;
+    font-weight: 600;
+ }
+
+ .hero-content .subtitle {
+    font-family: var(--font-body);
+    font-size: 18px;
+    text-decoration: uppercase;
+    letter-spacing: 3px;
+    color: #888;
+    margin-bottom: 15px;
+    display: block;
+ }
+
+ .hero-content p {
+    font-family: var(--font-heading);
+    font-size: 22px;
+    font-style: italic;
+    color: #444;
+    border-left: 3px solid var(--text-accent);
+    padding-left: 25px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+ }
+
+ .cta-link {
+    border-bottom: 1px solid var(--text-accent);
+    padding-bottom: 5px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-family: var(--font-body);
+ }
+
+ .hero-image {
+    width: 45%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+ }
+
+ .hero-image img {
+    width: 100%;
+    border-radius: 10px;
+    max-width: 380px;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(-15px 15px 25px rgba(27, 38, 59, 0.15));
+    margin: 20px 0;
+ }
+
+  /* ---  BIOGRAPHY SECTION --- */
