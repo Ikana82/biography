@@ -494,3 +494,20 @@ footer h2 {
     color: #555;
     font-family: var(--font-body);
 }
+
+@media (max-width: 768px) {
+    #hero .container { flex-direction: column-reverse; padding-top: 50px; text-align: center; }
+        .hero-content, .hero-image-wrapper { width: 100%; padding: 0; }
+        .hero-content h1 { font-size: 54px; margin-top: 30px; }
+        .hero-image-wrapper { justify-content: center; }
+        .hero-content p { border: none; padding: 0; border-top: 2px solid var(--text-accent); padding-top: 20px; }
+        
+        #biography .container { flex-direction: column; }
+        .bio-image img { width: 100%; }
+        
+        .timeline-item { flex-direction: column !important; gap: 30px; }
+        .timeline-image, .timeline-content { width: 100%; }
+        
+        .navbar .nav-links { display: none; }
+        #quote h2 { font-size: 32px; }
+}
