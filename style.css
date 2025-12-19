@@ -148,7 +148,7 @@ img {
     font-size: 90px;
     line-height: 1;
     color: var(--text-accent);
-    margin-bottom: 25px;
+    margin-bottom: 24px;
     font-weight: 600;
  }
 
@@ -232,11 +232,11 @@ img {
  }
 
 .bio-text h4 {
-    font-family: var(--font-subtitle);
+    font-family: var(--font-heading);
     font-size: 20px;
     color: var(--vg-yellow);
     letter-spacing: 2px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .bio-text h2 {
