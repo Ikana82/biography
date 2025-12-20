@@ -1,3 +1,11 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: 0.3s ease;
+}
+
 :root {
     --bg-light: #fdfcf8;
     --bg-secondary: #f0f4f8;
@@ -13,13 +21,6 @@
     --font-body: "Inter", sans-serif;
     --font-nav: "Cinzel", sans-serif;
     --font-subtitle: "Bebas Neue", sans-serif;
-}
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    transition: 0.3s ease;
 }
 
 html {
