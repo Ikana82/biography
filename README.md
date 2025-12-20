@@ -34,7 +34,7 @@ Jika Anda ingin menjalankan kode ini di komputer Anda:
 2.  **Masuk ke direktori proyek:**
 
     ```bash
-    cd biography-van-gogh
+    cd biography
     ```
 
 3.  **Buka file `index.html`:**
